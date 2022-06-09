@@ -168,147 +168,148 @@ fi
 echo "Extraction seems to be complete. Patching..."
 #set -x
 
-cp V5/Riibalanced/Core/StaticRU.rel RMCE01/DATA/files/rel/StaticR.rel
-cp V5/Riibalanced/Core/MainU.dol RMCE01/DATA/sys/main.dol
+cp -v V5/Riibalanced/Core/StaticRU.rel RMCE01/files/rel/StaticR.rel
+cp -v V5/Riibalanced/Core/MainU.dol RMCE01/files/sys/main.dol
 
-cp V5/Riibalanced/Tracks/* RMCE01/DATA/files/Race/Course/
-cp V5/Riibalanced/Textures/* RMCE01/DATA/files/Race/Kart/
-cp V5/Riibalanced/Menus/* RMCE01/DATA/files/Scene/UI/
+cp -v V5/Riibalanced/Tracks/* RMCE01/files/Race/Course/
+cp -v V5/Riibalanced/Textures/* RMCE01/files/Race/Kart/
+cp -v V5/Riibalanced/Menus/* RMCE01/files/Scene/UI/
 
-#cp V5/Riibalanced/Menus/Award.szs RMCE01/DATA/files/Scene/UI/
-#cp V5/Riibalanced/Menus/Event.szs RMCE01/DATA/files/Scene/UI/
-#cp V5/Riibalanced/Menus/Font.szs RMCE01/DATA/files/Scene/UI/
-#cp V5/Riibalanced/Menus/Globe.szs RMCE01/DATA/files/Scene/UI/
-#cp V5/Riibalanced/Menus/Present.szs RMCE01/DATA/files/Scene/UI/
-#cp V5/Riibalanced/Menus/Race.szs RMCE01/DATA/files/Scene/UI/
-#cp V5/Riibalanced/Menus/Title.szs RMCE01/DATA/files/Scene/UI/
-#cp V5/Riibalanced/Menus/MenuMulti.szs RMCE01/DATA/files/Scene/UI/
-#cp V5/Riibalanced/Menus/MenuOther.szs RMCE01/DATA/files/Scene/UI/
-#cp V5/Riibalanced/Menus/MenuSingle.szs RMCE01/DATA/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/Award.szs RMCE01/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/Event.szs RMCE01/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/Font.szs RMCE01/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/Globe.szs RMCE01/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/Present.szs RMCE01/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/Race.szs RMCE01/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/Title.szs RMCE01/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/MenuMulti.szs RMCE01/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/MenuOther.szs RMCE01/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/MenuSingle.szs RMCE01/files/Scene/UI/
 #music folder skipped to copy manually
-cp V5/Riibalanced/Ghosts/ghost1_* RMCE01/DATA/files/Race/TimeAttack/ghost1/
-cp V5/Riibalanced/Ghosts/ghost2_* RMCE01/DATA/files/Race/TimeAttack/ghost2/
+cp -v V5/Riibalanced/Ghosts/ghost1_* RMCE01/files/Race/TimeAttack/ghost1/
+cp -v V5/Riibalanced/Ghosts/ghost2_* RMCE01/files/Race/TimeAttack/ghost2/
 
-cp V5/Riibalanced/Music/RKart/revo_kart.brsar RMCE01/DATA/files/sound/revo_kart.brsar
-cp V5/Riibalanced/Core/Common.szs RMCE01/DATA/files/Race/Common.szs
+cp -v V5/Riibalanced/Music/RKart/revo_kart.brsar RMCE01/files/sound/revo_kart.brsar
+cp -v V5/Riibalanced/Core/Common.szs RMCE01/files/Race/Common.szs
 #skipping trailer thp since its identical
 #there are no remaining thps in the menus folder
 #using menusingle inside the menu folder for now since it doesnt exist in the languages folder
-#cp V5/Riibalanced/Menus/MenuSingle.szs RMCE01/DATA/files/Scene/UI/
+#cp -v V5/Riibalanced/Menus/MenuSingle.szs RMCE01/files/Scene/UI/
 
-cp V5/Riibalanced/Languages/Title_E.szs RMCE01/DATA/files/Scene/UI/Title_E.szs
-cp V5/Riibalanced/Languages/Title_E.szs RMCE01/DATA/files/Scene/UI/Title_I.szs
-cp V5/Riibalanced/Languages/Title_E.szs RMCE01/DATA/files/Scene/UI/Title_F.szs
-cp V5/Riibalanced/Languages/Title_E.szs RMCE01/DATA/files/Scene/UI/Title_G.szs
-cp V5/Riibalanced/Languages/Title_E.szs RMCE01/DATA/files/Scene/UI/Title_S.szs
-cp V5/Riibalanced/Languages/Title_E.szs RMCE01/DATA/files/Scene/UI/Title_J.szs
-cp V5/Riibalanced/Languages/Title_E.szs RMCE01/DATA/files/Scene/UI/Title_K.szs
-cp V5/Riibalanced/Languages/Title_E.szs RMCE01/DATA/files/Scene/UI/Title_U.szs
-cp V5/Riibalanced/Languages/Title_E.szs RMCE01/DATA/files/Scene/UI/Title_M.szs
-cp V5/Riibalanced/Languages/Title_E.szs RMCE01/DATA/files/Scene/UI/Title_Q.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Race_E.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Race_I.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Race_F.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Race_G.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Race_S.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Race_U.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Race_M.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Race_J.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Race_K.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Race_Q.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Globe_E.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Globe_I.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Globe_F.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Globe_G.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Globe_S.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Globe_U.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Globe_M.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Globe_J.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Globe_K.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/Globe_Q.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuMulti_E.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuMulti_I.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuMulti_F.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuMulti_G.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuMulti_S.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuMulti_U.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuMulti_M.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuMulti_J.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuMulti_K.szs
-cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuMulti_Q.szs
-#cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuSingle_E.szs
-#cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuSingle_I.szs
-#cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuSingle_F.szs
-#cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuSingle_G.szs
-#cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuSingle_S.szs
-#cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuSingle_U.szs
-#cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuSingle_M.szs
-#cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuSingle_J.szs
-#cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuSingle_K.szs
-#cp V5/Riibalanced/Languages/Race_E.szs RMCE01/DATA/files/Scene/UI/MenuSingle_Q.szs
+cp -v V5/Riibalanced/Languages/Title_E.szs RMCE01/files/Scene/UI/Title_E.szs
+cp -v V5/Riibalanced/Languages/Title_E.szs RMCE01/files/Scene/UI/Title_I.szs
+cp -v V5/Riibalanced/Languages/Title_E.szs RMCE01/files/Scene/UI/Title_F.szs
+cp -v V5/Riibalanced/Languages/Title_E.szs RMCE01/files/Scene/UI/Title_G.szs
+cp -v V5/Riibalanced/Languages/Title_E.szs RMCE01/files/Scene/UI/Title_S.szs
+cp -v V5/Riibalanced/Languages/Title_E.szs RMCE01/files/Scene/UI/Title_J.szs
+cp -v V5/Riibalanced/Languages/Title_E.szs RMCE01/files/Scene/UI/Title_K.szs
+cp -v V5/Riibalanced/Languages/Title_E.szs RMCE01/files/Scene/UI/Title_U.szs
+cp -v V5/Riibalanced/Languages/Title_E.szs RMCE01/files/Scene/UI/Title_M.szs
+cp -v V5/Riibalanced/Languages/Title_E.szs RMCE01/files/Scene/UI/Title_Q.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Race_E.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Race_I.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Race_F.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Race_G.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Race_S.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Race_U.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Race_M.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Race_J.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Race_K.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Race_Q.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Globe_E.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Globe_I.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Globe_F.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Globe_G.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Globe_S.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Globe_U.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Globe_M.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Globe_J.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Globe_K.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/Globe_Q.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuMulti_E.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuMulti_I.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuMulti_F.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuMulti_G.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuMulti_S.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuMulti_U.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuMulti_M.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuMulti_J.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuMulti_K.szs
+cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuMulti_Q.szs
+#cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuSingle_E.szs
+#cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuSingle_I.szs
+#cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuSingle_F.szs
+#cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuSingle_G.szs
+#cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuSingle_S.szs
+#cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuSingle_U.szs
+#cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuSingle_M.szs
+#cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuSingle_J.szs
+#cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuSingle_K.szs
+#cp -v V5/Riibalanced/Languages/Race_E.szs RMCE01/files/Scene/UI/MenuSingle_Q.szs
 
 #Copy all the music here
-cp V5/Riibalanced/Music/n_block_F.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/n_block_n.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/n_circuit32_f.brstm RMCE01/DATA/files/sound/strm/n_Circuit32_f.brstm
-cp V5/Riibalanced/Music/n_circuit32_n.brstm RMCE01/DATA/files/sound/strm/n_Circuit32_n.brstm
-cp V5/Riibalanced/Music/n_daisy32_f.brstm RMCE01/DATA/files/sound/strm/n_Daisy32_f.brstm
-cp V5/Riibalanced/Music/n_daisy32_n.brstm RMCE01/DATA/files/sound/strm/n_Daisy32_n.brstm
-cp V5/Riibalanced/Music/n_farm_f.brstm RMCE01/DATA/files/sound/strm/n_Farm_F.brstm
-cp V5/Riibalanced/Music/n_farm_n.brstm RMCE01/DATA/files/sound/strm/n_Farm_n.brstm
-cp V5/Riibalanced/Music/n_kinoko_f.brstm RMCE01/DATA/files/sound/strm/n_Kinoko_F.brstm
-cp V5/Riibalanced/Music/n_kinoko_n.brstm RMCE01/DATA/files/sound/strm/n_Kinoko_n.brstm
-cp V5/Riibalanced/Music/n_maple_f.brstm RMCE01/DATA/files/sound/strm/n_maple_F.brstm
-cp V5/Riibalanced/Music/n_maple_n.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/n_rainbow32_f.brstm RMCE01/DATA/files/sound/strm/n_Rainbow32_f.brstm
-cp V5/Riibalanced/Music/n_rainbow32_n.brstm RMCE01/DATA/files/sound/strm/n_Rainbow32_n.brstm
-cp V5/Riibalanced/Music/n_shopping32_f.brstm RMCE01/DATA/files/sound/strm/n_Shopping32_f.brstm
-cp V5/Riibalanced/Music/n_shopping32_n.brstm RMCE01/DATA/files/sound/strm/n_Shopping32_n.brstm
-cp V5/Riibalanced/Music/n_skate_F.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/n_skate_n.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/n_snowboard32_f.brstm RMCE01/DATA/files/sound/strm/n_Snowboard32_F.brstm
-cp V5/Riibalanced/Music/n_snowboard32_n.brstm RMCE01/DATA/files/sound/strm/n_Snowboard32_n.brstm
-cp V5/Riibalanced/Music/r_64_battle_F.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/r_64_battle_n.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/r_64_jungle32_f.brstm RMCE01/DATA/files/sound/strm/r_64_Jungle32_f.brstm
-cp V5/Riibalanced/Music/r_64_kuppa32_f.brstm RMCE01/DATA/files/sound/strm/r_64_Kuppa32_f.brstm
-cp V5/Riibalanced/Music/r_64_kuppa32_n.brstm RMCE01/DATA/files/sound/strm/r_64_Kuppa32_n.brstm
-cp V5/Riibalanced/Music/r_64_sherbet32_f.brstm RMCE01/DATA/files/sound/strm/r_64_Sherbet32_f.brstm
-cp V5/Riibalanced/Music/r_64_sherbet32_n.brstm RMCE01/DATA/files/sound/strm/r_64_Sherbet32_n.brstm
-cp V5/Riibalanced/Music/r_agb_battle_F.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/r_agb_battle_n.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/r_agb_kuppa32_f.brstm RMCE01/DATA/files/sound/strm/r_AGB_Kuppa32_f.brstm
-cp V5/Riibalanced/Music/r_agb_kuppa32_n.brstm RMCE01/DATA/files/sound/strm/r_AGB_Kuppa32_n.brstm
-cp V5/Riibalanced/Music/r_DS_battle_F.brstm RMCE01/DATA/files/sound/strm/r_ds_battle_F.brstm
-cp V5/Riibalanced/Music/r_DS_battle_n.brstm RMCE01/DATA/files/sound/strm/r_ds_battle_n.brstm
-cp V5/Riibalanced/Music/r_ds_desert32_f.brstm RMCE01/DATA/files/sound/strm/r_DS_Desert32_f.brstm
-cp V5/Riibalanced/Music/r_ds_desert32_n.brstm RMCE01/DATA/files/sound/strm/r_DS_Desert32_n.brstm
-cp V5/Riibalanced/Music/r_ds_garden32_f.brstm RMCE01/DATA/files/sound/strm/r_DS_Garden32_f.brstm
-cp V5/Riibalanced/Music/r_ds_garden32_n.brstm RMCE01/DATA/files/sound/strm/r_DS_Garden32_n.brstm
-cp V5/Riibalanced/Music/r_ds_jungle32_f.brstm RMCE01/DATA/files/sound/strm/r_DS_Jungle32_f.brstm
-cp V5/Riibalanced/Music/r_ds_jungle32_n.brstm RMCE01/DATA/files/sound/strm/r_DS_Jungle32_n.brstm
-cp V5/Riibalanced/Music/r_ds_town32_f.brstm RMCE01/DATA/files/sound/strm/r_DS_Town32_f.brstm
-cp V5/Riibalanced/Music/r_ds_town32_n.brstm RMCE01/DATA/files/sound/strm/r_DS_Town32_n.brstm
-cp V5/Riibalanced/Music/r_GC_Battle32_F.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/r_GC_Battle32_n.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/r_gc_beach32_f.brstm RMCE01/DATA/files/sound/strm/r_GC_Beach32_f.brstm
-cp V5/Riibalanced/Music/r_gc_beach32_n.brstm RMCE01/DATA/files/sound/strm/r_GC_Beach32_n.brstm
-cp V5/Riibalanced/Music/r_gc_mountain32_f.brstm RMCE01/DATA/files/sound/strm/r_GC_Mountain32_f.brstm
-cp V5/Riibalanced/Music/r_gc_mountain32_n.brstm RMCE01/DATA/files/sound/strm/r_GC_Mountain32_n.brstm
-cp V5/Riibalanced/Music/r_gc_stadium32_f.brstm RMCE01/DATA/files/sound/strm/r_GC_Stadium32_f.brstm
-cp V5/Riibalanced/Music/r_gc_stadium32_n.brstm RMCE01/DATA/files/sound/strm/r_GC_Stadium32_n.brstm
-cp V5/Riibalanced/Music/r_sfc_battle_F.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/r_sfc_battle_n.brstm RMCE01/DATA/files/sound/strm/
-cp V5/Riibalanced/Music/r_sfc_circuit32_f.brstm RMCE01/DATA/files/sound/strm/r_SFC_Circuit32_f.brstm
-cp V5/Riibalanced/Music/r_sfc_circuit32_n.brstm RMCE01/DATA/files/sound/strm/r_SFC_Circuit32_n.brstm
-cp V5/Riibalanced/Music/r_sfc_obake32_f.brstm RMCE01/DATA/files/sound/strm/r_SFC_Obake32_f.brstm
-cp V5/Riibalanced/Music/r_sfc_obake32_n.brstm RMCE01/DATA/files/sound/strm/r_SFC_Obake32_n.brstm
-cp V5/Riibalanced/Music/STRM_N_FACTORY_N.brstm RMCE01/DATA/files/sound/strm/
+cp -v V5/Riibalanced/Music/n_block_F.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/n_block_n.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/n_circuit32_f.brstm RMCE01/files/sound/strm/n_Circuit32_f.brstm
+cp -v V5/Riibalanced/Music/n_circuit32_n.brstm RMCE01/files/sound/strm/n_Circuit32_n.brstm
+cp -v V5/Riibalanced/Music/n_daisy32_f.brstm RMCE01/files/sound/strm/n_Daisy32_f.brstm
+cp -v V5/Riibalanced/Music/n_daisy32_n.brstm RMCE01/files/sound/strm/n_Daisy32_n.brstm
+cp -v V5/Riibalanced/Music/n_farm_f.brstm RMCE01/files/sound/strm/n_Farm_F.brstm
+cp -v V5/Riibalanced/Music/n_farm_n.brstm RMCE01/files/sound/strm/n_Farm_n.brstm
+cp -v V5/Riibalanced/Music/n_kinoko_f.brstm RMCE01/files/sound/strm/n_Kinoko_F.brstm
+cp -v V5/Riibalanced/Music/n_kinoko_n.brstm RMCE01/files/sound/strm/n_Kinoko_n.brstm
+cp -v V5/Riibalanced/Music/n_maple_f.brstm RMCE01/files/sound/strm/n_maple_F.brstm
+cp -v V5/Riibalanced/Music/n_maple_n.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/n_rainbow32_f.brstm RMCE01/files/sound/strm/n_Rainbow32_f.brstm
+cp -v V5/Riibalanced/Music/n_rainbow32_n.brstm RMCE01/files/sound/strm/n_Rainbow32_n.brstm
+cp -v V5/Riibalanced/Music/n_shopping32_f.brstm RMCE01/files/sound/strm/n_Shopping32_f.brstm
+cp -v V5/Riibalanced/Music/n_shopping32_n.brstm RMCE01/files/sound/strm/n_Shopping32_n.brstm
+cp -v V5/Riibalanced/Music/n_skate_F.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/n_skate_n.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/n_snowboard32_f.brstm RMCE01/files/sound/strm/n_Snowboard32_F.brstm
+cp -v V5/Riibalanced/Music/n_snowboard32_n.brstm RMCE01/files/sound/strm/n_Snowboard32_n.brstm
+cp -v V5/Riibalanced/Music/r_64_battle_F.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/r_64_battle_n.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/r_64_jungle32_f.brstm RMCE01/files/sound/strm/r_64_Jungle32_f.brstm
+cp -v V5/Riibalanced/Music/r_64_kuppa32_f.brstm RMCE01/files/sound/strm/r_64_Kuppa32_f.brstm
+cp -v V5/Riibalanced/Music/r_64_kuppa32_n.brstm RMCE01/files/sound/strm/r_64_Kuppa32_n.brstm
+cp -v V5/Riibalanced/Music/r_64_sherbet32_f.brstm RMCE01/files/sound/strm/r_64_Sherbet32_f.brstm
+cp -v V5/Riibalanced/Music/r_64_sherbet32_n.brstm RMCE01/files/sound/strm/r_64_Sherbet32_n.brstm
+cp -v V5/Riibalanced/Music/r_agb_battle_F.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/r_agb_battle_n.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/r_agb_kuppa32_f.brstm RMCE01/files/sound/strm/r_AGB_Kuppa32_f.brstm
+cp -v V5/Riibalanced/Music/r_agb_kuppa32_n.brstm RMCE01/files/sound/strm/r_AGB_Kuppa32_n.brstm
+cp -v V5/Riibalanced/Music/r_DS_battle_F.brstm RMCE01/files/sound/strm/r_ds_battle_F.brstm
+cp -v V5/Riibalanced/Music/r_DS_battle_n.brstm RMCE01/files/sound/strm/r_ds_battle_n.brstm
+cp -v V5/Riibalanced/Music/r_ds_desert32_f.brstm RMCE01/files/sound/strm/r_DS_Desert32_f.brstm
+cp -v V5/Riibalanced/Music/r_ds_desert32_n.brstm RMCE01/files/sound/strm/r_DS_Desert32_n.brstm
+cp -v V5/Riibalanced/Music/r_ds_garden32_f.brstm RMCE01/files/sound/strm/r_DS_Garden32_f.brstm
+cp -v V5/Riibalanced/Music/r_ds_garden32_n.brstm RMCE01/files/sound/strm/r_DS_Garden32_n.brstm
+cp -v V5/Riibalanced/Music/r_ds_jungle32_f.brstm RMCE01/files/sound/strm/r_DS_Jungle32_f.brstm
+cp -v V5/Riibalanced/Music/r_ds_jungle32_n.brstm RMCE01/files/sound/strm/r_DS_Jungle32_n.brstm
+cp -v V5/Riibalanced/Music/r_ds_town32_f.brstm RMCE01/files/sound/strm/r_DS_Town32_f.brstm
+cp -v V5/Riibalanced/Music/r_ds_town32_n.brstm RMCE01/files/sound/strm/r_DS_Town32_n.brstm
+cp -v V5/Riibalanced/Music/r_GC_Battle32_F.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/r_GC_Battle32_n.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/r_gc_beach32_f.brstm RMCE01/files/sound/strm/r_GC_Beach32_f.brstm
+cp -v V5/Riibalanced/Music/r_gc_beach32_n.brstm RMCE01/files/sound/strm/r_GC_Beach32_n.brstm
+cp -v V5/Riibalanced/Music/r_gc_mountain32_f.brstm RMCE01/files/sound/strm/r_GC_Mountain32_f.brstm
+cp -v V5/Riibalanced/Music/r_gc_mountain32_n.brstm RMCE01/files/sound/strm/r_GC_Mountain32_n.brstm
+cp -v V5/Riibalanced/Music/r_gc_stadium32_f.brstm RMCE01/files/sound/strm/r_GC_Stadium32_f.brstm
+cp -v V5/Riibalanced/Music/r_gc_stadium32_n.brstm RMCE01/files/sound/strm/r_GC_Stadium32_n.brstm
+cp -v V5/Riibalanced/Music/r_sfc_battle_F.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/r_sfc_battle_n.brstm RMCE01/files/sound/strm/
+cp -v V5/Riibalanced/Music/r_sfc_circuit32_f.brstm RMCE01/files/sound/strm/r_SFC_Circuit32_f.brstm
+cp -v V5/Riibalanced/Music/r_sfc_circuit32_n.brstm RMCE01/files/sound/strm/r_SFC_Circuit32_n.brstm
+cp -v V5/Riibalanced/Music/r_sfc_obake32_f.brstm RMCE01/files/sound/strm/r_SFC_Obake32_f.brstm
+cp -v V5/Riibalanced/Music/r_sfc_obake32_n.brstm RMCE01/files/sound/strm/r_SFC_Obake32_n.brstm
+cp -v V5/Riibalanced/Music/STRM_N_FACTORY_N.brstm RMCE01/files/sound/strm/
 
 #set +x
 
 echo
 echo "Patch complete. wit will now compile the resulting disc image."
+read -p "Press any key to continue... " -n1 -s
 
 # overwrite check ---------------------------------------------------------------
 
