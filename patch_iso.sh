@@ -169,7 +169,7 @@ echo "Extraction seems to be complete. Patching..."
 #set -x
 
 cp -v V5/Riibalanced/Core/StaticRU.rel RMCE01/files/rel/StaticR.rel
-cp -v V5/Riibalanced/Core/MainU.dol RMCE01/files/sys/main.dol
+cp -v V5/Riibalanced/Core/MainU.dol RMCE01/sys/main.dol
 
 cp -v V5/Riibalanced/Tracks/* RMCE01/files/Race/Course/
 cp -v V5/Riibalanced/Textures/* RMCE01/files/Race/Kart/
@@ -334,6 +334,7 @@ if [[ $CYGWIN ]]; then
 else 
   wit mix RMCE01/ -B --dest riibalanced.wbfs
   wit edit riibalanced.wbfs --name MarioKartRiibalanced
+  wit edit riibalanced.wbfs --id=RMCE38
 fi 
 rm -rf RMCE01/
 
